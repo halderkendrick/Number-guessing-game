@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 350px;
+            padding: 20px 30px;
+            border: 1px solid goldenrod;
+            border-radius: 20px;
+            text-align: center;
+        }
+        input{
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        button{
+            border: none;
+            padding: 10px 20px;
+            background-color: goldenrod;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .player_two,
+        .winner{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Number Gussing Game</h1>
+   <div class="main">
+    <div class="player_one">
+        <h2>Player 1</h2>
+        <input class="player1_input" type="text" placeholder="Input a number less then 10">
+        <p class="player1_err"></p>
+        <br>
+        <br>
+        <button class="player1_button">Submit</button>
+    </div>
+    <div class="player_two">
+        <h2>Player 2</h2>
+        <p>Guess the previous player number. You have 5 chances only</p>
+        <input class="player2_input" type="text" placeholder="Input a number less then 10">
+        <p class="player2_err"></p>
+        <br>
+        <br>
+        <button class="player2_button">Submit</button>
+    </div>
+    <h2 class="winner"></h2>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
